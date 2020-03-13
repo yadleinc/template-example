@@ -75,12 +75,12 @@ scriptList.forEach((script) => {
 
 function demo() {
 
-    // If "template_1" is selected as the active template,
-    // then the "template_1" event will be triggered each time search
+    // If "Template_1" is selected as the active template,
+    // then the "Template_1" event will be triggered each time search
     // results are returned. The event name is synonymous with the value for
     // "template_name" that you give when you create a template object via the API. 
     // If you do not listen for this exact event, the template will not work.
-    document.addEventListener("template_1", function (event) {
+    document.addEventListener("Template_1", function (event) {
 
         // Yadle_App is defined in lib.js
         Yadle_App(event)
