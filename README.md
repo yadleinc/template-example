@@ -44,16 +44,16 @@ import requests
 # replace this url with your API url
 url = "https://sample_organization1.yadle.com/yadle/v2/template/{{templateid}}/file"
 payload = {}
+
+files = [
+  ('file', open('/home/templates/src.zip','rb'))
+]
  
 headers = {
   'x-app-id': 'your_app_id’,
   'Authorization': 'valid_bearer_from_login'
 }
  
-files = [
- ('file', open('/home/user1/documents/my_template/Template_1/src.zip','rb'))
-]
-headers= {}
 response = requests.request("PUT", url, headers=headers, data = payload, files = files)
 ``` 
 
